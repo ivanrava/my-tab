@@ -1,14 +1,17 @@
 <!-- Basic Theme with a list of links -->
 <template>
   <main>
-    <ul>
-      <li v-for="link in links" :key="link.href">
-        <a :href="link.href">
-          <div>{{ link.name }}</div>
-          <small>{{ link.href }}</small>
-        </a>
-      </li>
-    </ul>
+    <div v-for="hive in hives" :key="hive.name">
+      <h4>{{ hive.name }}</h4>
+      <ul>
+        <li v-for="link in hive.links" :key="link.href">
+          <a :href="link.href">
+            <div>{{ link.name }}</div>
+            <small>{{ link.href }}</small>
+          </a>
+        </li>
+      </ul>
+    </div>
   </main>
 </template>
 
@@ -16,7 +19,7 @@
 export default {
   name: 'Basic',
   props: {
-    links: {
+    hives: {
       type: Array,
       required: true,
     },
@@ -54,5 +57,9 @@ li {
 ul {
   padding: 0;
   margin: 0;
+}
+h4 {
+  margin: 3em 0 0 0;
+  text-decoration: underline;
 }
 </style>

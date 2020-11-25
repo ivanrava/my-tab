@@ -1,0 +1,24 @@
+[
+  {
+    "name": "😀 Main",
+    "links": [
+      {
+        "name": "DuckDuckGo",
+        "href": "https://www.duckduckgo.com"
+      },
+      {
+        "name": "Wikipedia",
+        "href": "https://www.wikipedia.org"
+      }
+    ]
+  },
+  {
+    "name": "👨‍💻 Coding",
+    "links": [
+      {
+        "name": "StackOverflow",
+        "href": "https://www.stackoverflow.com"
+      }
+    ]
+  }
+]

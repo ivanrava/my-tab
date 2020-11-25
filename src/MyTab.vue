@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <component :links="links" :is="theme"></component>
+    <component id="skin" :hives="hives" :is="skin"></component>
   </div>
 </template>
 
 <script>
 import Basic from './themes/Basic.vue';
-import links from './links.json';
+import hives from './hives.json';
 
 export default {
   name: 'MyTab',
   data() {
     return {
-      links,
-      theme: process.env.VUE_APP_THEME,
+      hives,
+      skin: process.env.VUE_APP_SKIN,
     };
   },
   components: {
