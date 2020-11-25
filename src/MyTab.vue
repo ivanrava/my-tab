@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import Basic from './themes/Basic.vue';
+import Basic from '@/themes/Basic.vue';
+import Mendeleev from '@/themes/Mendeleev.vue';
 import hives from './hives.json';
 
 export default {
@@ -18,6 +19,7 @@ export default {
   },
   components: {
     Basic,
+    Mendeleev,
   },
 };
 </script>
