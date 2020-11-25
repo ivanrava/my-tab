@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Basic :links="links"/>
+    <component :links="links" :is="theme"></component>
   </div>
 </template>
 
@@ -13,6 +13,7 @@ export default {
   data() {
     return {
       links,
+      theme: process.env.VUE_APP_THEME,
     };
   },
   components: {
