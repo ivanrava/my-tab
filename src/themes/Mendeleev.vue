@@ -29,6 +29,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  background-color: #202020;
 }
 .column {
   display: flex;
@@ -36,5 +37,6 @@ main {
 }
 h4 {
   text-align: center;
+  color: lightgray;
 }
 </style>

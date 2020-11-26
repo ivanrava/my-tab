@@ -25,7 +25,7 @@ export default {
 
 <style scoped lang="scss">
 $border_width: 4px;
-$no_hover_color: black;
+$no_hover_color: lightgray;
 $hover_color: seagreen;
 
 a {
