@@ -16,14 +16,8 @@ export default {
   },
   computed: {
     initials() {
-      let uppers = '';
-      for (let i = 0; i < this.link.name.length; i += 1) {
-        if (this.link.name[i] === this.link.name[i].toUpperCase()) {
-          uppers += this.link.name[i].toLowerCase();
-        }
-      }
-      uppers = uppers[0].toUpperCase() + uppers.slice(1);
-      return uppers;
+      const initials = this.link.name.match(/[A-Z]/g).join('').toLowerCase();
+      return initials[0].toUpperCase() + initials.slice(1);
     },
   },
 };
