@@ -24,14 +24,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$border_width: 4px;
+$border_width: 1px;
 $no_hover_color: lightgray;
 $hover_color: seagreen;
 
 a {
   color: $no_hover_color;
   margin-bottom: -$border_width/2;
-  border-collapse: collapse;
   border: $border_width solid $no_hover_color;
   padding: 2em;
   display: block;
