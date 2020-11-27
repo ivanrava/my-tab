@@ -24,8 +24,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$border_width: 1px;
-$no_hover_color: lightgray;
+$border_width: 4px;
+$no_hover_color: #9a9a9a;
 $hover_color: seagreen;
 
 a {
@@ -40,6 +40,7 @@ a {
 a:hover {
   color: $hover_color;
   border-color: $hover_color;
+  z-index: 100;
 }
 #initials {
   font-size: 2.1em;
