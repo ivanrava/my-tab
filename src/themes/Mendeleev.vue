@@ -2,7 +2,7 @@
 <template>
   <main>
     <div class="empty"></div>
-    <div class="column" v-for="hive in hives" :key="hive.name">
+    <div class="column" v-for="hive in sortedHives" :key="hive.name">
       <h4>{{ hive.name }}</h4>
       <ChemicalElement v-for="link in hive.links" :link="link" :key="link.href"></ChemicalElement>
     </div>
@@ -20,6 +20,21 @@ export default {
     hives: {
       type: Array,
       required: true,
+    },
+  },
+  computed: {
+    sortedHives() {
+      const sorted = this.hives.slice()
+        .sort((hive1, hive2) => hive2.links.length - hive1.links.length);
+      const tableSorted = [];
+      for (let i = 0; i < sorted.length; i += 1) {
+        if (i % 2 === 0) {
+          tableSorted.splice(tableSorted.length / 2, 0, sorted[i]);
+        } else {
+          tableSorted.splice(Math.ceil(tableSorted.length / 2), 0, sorted[i]);
+        }
+      }
+      return tableSorted;
     },
   },
 };
