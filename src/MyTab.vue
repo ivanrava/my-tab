@@ -31,4 +31,8 @@ export default {
 #skin {
   height: 100%;
 }
+@font-face {
+  font-family: 'Kramola';
+  src: local('Kramola'), url('./fonts/Kramola.ttf') format('truetype');
+}
 </style>
