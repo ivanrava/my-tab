@@ -46,10 +46,10 @@ export default {
 <style scoped lang="scss">
 $colors: #1C77C3, #F39237, #D63230, #26C485, #D35269, #F7E8A4;
 $text_color: lightgray;
-$bg_color: #202020;
+$bg_color: #150000;
 
 main {
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background-color: $bg_color;
   display: flex;
   flex-direction: column;

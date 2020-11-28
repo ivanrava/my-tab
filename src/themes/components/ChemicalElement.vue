@@ -1,6 +1,6 @@
 <template>
   <a :href="link.href">
-    <div id="initials">{{ initials }}</div>
+    <abbr>{{ initials }}</abbr>
     <div id="name">{{ link.name }}</div>
   </a>
 </template>
@@ -29,6 +29,7 @@ $no_hover_color: #9a9a9a;
 $hover_color: seagreen;
 
 a {
+  font-family: 'Segoe UI', sans-serif;
   color: $no_hover_color;
   margin-bottom: -$border_width/2;
   border: $border_width solid $no_hover_color;
@@ -42,11 +43,11 @@ a:hover {
   border-color: $hover_color;
   z-index: 100;
 }
-#initials {
-  font-size: 2.1em;
-  font-weight: bold;
+abbr {
+  font-family: 'Segoe UI Bold', sans-serif;
+  font-size: 2.4em;
 }
 #name {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 </style>

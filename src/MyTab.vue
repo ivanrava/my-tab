@@ -35,4 +35,12 @@ export default {
   font-family: 'Kramola';
   src: local('Kramola'), url('./fonts/Kramola.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Segoe UI';
+  src: local('Segoe UI'), url('fonts/SegoeUI.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: local('Segoe UI Bold'), url('fonts/SegoeUIBold.ttf') format('truetype');
+}
 </style>
