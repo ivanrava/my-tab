@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$colors: #1C77C3, #F39237, #D63230, #26C485, #D35269, #F7E8A4;
+$colors: #1C77C3, #F39237, #D63230, #26C485, #D35269, #F7E8A4, #8563BB;
 $text_color: lightgray;
 $bg_color: #150000;
 
