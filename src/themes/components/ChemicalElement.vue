@@ -36,7 +36,7 @@ a {
   padding: 2em;
   display: block;
   text-decoration: none;
-  transition: color 0.2s, border 0.2s;
+  transition: color 0.2s, border 0.2s, background-color 0.2s;
 }
 a:hover {
   color: $hover_color;

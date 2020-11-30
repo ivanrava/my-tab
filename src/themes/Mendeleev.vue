@@ -81,6 +81,7 @@ h4 {
   .column:nth-child(#{$i+1}) > a:hover {
     color: nth($colors, $i);
     border-color: nth($colors, $i);
+    background-color: rgba(nth($colors, $i), .15);
   }
 }
 </style>
